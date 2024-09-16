@@ -1,94 +1,89 @@
-{
- "cells": [
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "# Titanic Survival Prediction: Enhancing Cruise Ship Safety\n",
-    "\n",
-    "## Industry: Tourism & Hospitality\n",
-    "## Domain: Maritime Safety & Risk Management\n",
-    "\n",
-    "### 🚢 Use Case Summary\n",
-    "\n",
-    "Leveraging machine learning techniques to analyze historical Titanic passenger data, we aim to develop predictive models that can enhance modern cruise ship safety protocols. Our AI-powered \"Safety Companion\" system can:\n",
-    "\n",
-    "1. Identify high-risk passengers\n",
-    "2. Optimize evacuation procedures\n",
-    "3. Personalize safety briefings\n",
-    "\n",
-    "### 🎯 Objective\n",
-    "\n",
-    "Develop and compare machine learning models to predict passenger survival probability, forming the foundation of the \"Safety Companion\" system for cruise ships.\n",
-    "\n",
-    "### 🧠 Models\n",
-    "\n",
-    "1. Logistic Regression: For interpretability and baseline performance\n",
-    "   - Achieved 79.80% accuracy on training data\n",
-    "   - Implemented with feature normalization\n",
-    "2. Deep Artificial Neural Network (ANN): For capturing complex patterns and higher accuracy\n",
-    "   - Achieved 82.49% accuracy on training data\n",
-    "   - Architecture: Input layer, hidden layers [128, 64, 32], output layer\n",
-    "   - Used 'sriram' activation function for improved performance\n",
-    "\n",
-    "### 📊 Key Features (by importance)\n",
-    "\n",
-    "1. Passenger Class (Pclass)\n",
-    "2. Sex\n",
-    "3. Age\n",
-    "4. Family Size\n",
-    "\n",
-    "### 🛠️ Implementation Steps\n",
-    "\n",
-    "1. Data Preprocessing & EDA\n",
-    "   - Normalized all features using Z-score normalization\n",
-    "   - Focused on key features: Sex, Age, FamilySize, and Passenger Class\n",
-    "2. Model Development (Logistic Regression & Deep ANN)\n",
-    "3. Performance Comparison\n",
-    "4. Feature Importance Analysis\n",
-    "5. Training Visualization\n",
-    "\n",
-    "### 🌟 Key Findings\n",
-    "\n",
-    "1. Model Performance:\n",
-    "   - Deep ANN outperformed Logistic Regression by 2.69 percentage points\n",
-    "   - Suggests presence of non-linear relationships in the data\n",
-    "\n",
-    "2. Feature Importance:\n",
-    "   - Passenger Class (especially 3rd class) is the strongest predictor of survival\n",
-    "   - Sex is almost equally important, confirming \"women and children first\" policy\n",
-    "   - Age has moderate importance\n",
-    "   - Family Size contributes least but still relevant\n",
-    "\n",
-    "3. Survival Factors:\n",
-    "   - Lower class passengers were at higher risk\n",
-    "   - Gender played a significant role in survival chances\n",
-    "   - Age was a factor, but less impactful than class and gender\n",
-    "   - Family size had some influence on survival predictions\n",
-    "\n",
-    "4. Non-linear Relationships:\n",
-    "   - Deep ANN's superior performance indicates complex interactions between features\n",
-    "\n",
-    "### 🔜 Implications and Future Enhancements\n",
-    "\n",
-    "1. Prioritize risk assessment based on multiple factors, not single attributes\n",
-    "2. Pay special attention to passengers in lower classes during emergencies\n",
-    "3. Balance gender and age considerations in evacuation protocols with ethical concerns\n",
-    "4. Utilize the Deep ANN model for more accurate risk assessments\n",
-    "5. Future steps:\n",
-    "   - Gather more detailed data on cabin locations and lifeboat proximity\n",
-    "   - Incorporate real-time factors like passenger location on the ship\n",
-    "   - Develop a user-friendly interface for crew members\n",
-    "   - Conduct simulations to test and refine the system\n",
-    "   - Address ethical implications and potential biases in the model's recommendations"
-   ]
-  }
- ],
- "metadata": {
-  "language_info": {
-   "name": "python"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 2
-}
+# Titanic Survival Prediction: Enhancing Cruise Ship Safety
+
+## Industry: Tourism & Hospitality  
+## Domain: Maritime Safety & Risk Management
+
+### 🚢 Use Case Summary
+
+Leveraging machine learning techniques to analyze historical Titanic passenger data, this project aims to develop predictive models to enhance modern cruise ship safety protocols. The AI-powered "Safety Companion" system is designed to:
+
+1. Identify high-risk passengers
+2. Optimize evacuation procedures
+3. Personalize safety briefings
+
+### 🎯 Objective
+
+The goal is to develop and compare machine learning models to predict passenger survival probability, forming the foundation of the "Safety Companion" system for cruise ships.
+
+### 🧠 Models
+
+1. **Logistic Regression**: 
+   - Provides interpretability and serves as a baseline model.
+   - Achieved **79.80% accuracy** on training data.
+   - Implemented with feature normalization.
+
+2. **Deep Artificial Neural Network (ANN)**: 
+   - Captures complex patterns for higher accuracy.
+   - Achieved **82.49% accuracy** on training data.
+   - Architecture: Input layer, hidden layers [128, 64, 32], output layer.
+   - Used custom 'sriram' activation function for improved performance.
+
+### 📊 Key Features (Ranked by Importance)
+
+1. **Passenger Class (Pclass)**
+2. **Sex**
+3. **Age**
+4. **Family Size**
+
+### 🛠️ Implementation Steps
+
+1. **Data Preprocessing & Exploratory Data Analysis (EDA)**:
+   - Normalized all features using Z-score normalization.
+   - Focused on key features: Sex, Age, Family Size, and Passenger Class.
+   
+2. **Model Development**: 
+   - Built and trained models (Logistic Regression & Deep ANN).
+   
+3. **Performance Comparison**: 
+   - Evaluated model performance on survival prediction.
+
+4. **Feature Importance Analysis**: 
+   - Ranked the impact of each feature on model predictions.
+
+5. **Training Visualization**: 
+   - Visualized loss curves for training progression.
+
+### 🌟 Key Findings
+
+1. **Model Performance**:
+   - The Deep ANN outperformed Logistic Regression by 2.69 percentage points.
+   - This suggests the presence of non-linear relationships in the data.
+
+2. **Feature Importance**:
+   - **Passenger Class (Pclass)** is the strongest predictor of survival.
+   - **Sex** is almost equally important, supporting the "women and children first" policy.
+   - **Age** has moderate importance.
+   - **Family Size** is relevant, but less influential.
+
+3. **Survival Factors**:
+   - Lower-class passengers were at higher risk.
+   - Gender significantly influenced survival chances.
+   - Age was a factor but less impactful than class and gender.
+   - Family size had some influence on survival predictions.
+
+4. **Non-linear Relationships**:
+   - The superior performance of the Deep ANN indicates complex interactions between features.
+
+### 🔜 Implications and Future Enhancements
+
+1. Prioritize risk assessment based on multiple factors, not single attributes.
+2. Pay special attention to passengers in lower classes during emergencies.
+3. Balance gender and age considerations in evacuation protocols with ethical concerns.
+4. Utilize the Deep ANN model for more accurate risk assessments.
+
+#### Future Steps:
+- Gather more detailed data on cabin locations and lifeboat proximity.
+- Incorporate real-time factors such as passenger location on the ship.
+- Develop a user-friendly interface for crew members.
+- Conduct simulations to test and refine the system.
+- Address ethical implications and potential biases in the model's recommendations.
